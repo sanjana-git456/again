@@ -4,7 +4,7 @@ def profit(x):
     maxprofit = 0
     for i in range(1,len(x)):
         diff = x[i]-minprice
-        maxprofit = max(maxprofit,diff)
-        minprice = min(minprice,x[i])
+        maxprofit = max(maxprofit, diff)
+        minprice = min(minprice, x[i])
     return maxprofit
 print(profit(x))
