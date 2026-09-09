@@ -6,6 +6,8 @@ def profit(x):
     while left < right:
         new = x[right] - x[left]
         m = min(m,new)
+        left += 1
+        right -= 1
     if m < 0:
         return 0
     else:
