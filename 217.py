@@ -11,7 +11,17 @@ def dup(x):
             return True
         else:
             return False
-print(dup(x))
 
 def dup2(x):
     return len(set(x)) != len(x)
+
+def dup3(x):
+    seen = set()
+    for i in x:
+        if i in seen:
+            return True
+        seen.add(i)
+    return False
+print(dup(x))
+print(dup2(x))
+print(dup3(x))
