@@ -3,7 +3,7 @@ t = int(input("Enter target: "))
 def bin(x):
     left = 0
     right = len(x)-1
-    for i in range(len(x)):
+    while left <= right:
         mid = (left+right)//2
         if x[mid] == t:
             return mid
