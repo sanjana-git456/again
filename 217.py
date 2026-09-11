@@ -9,8 +9,7 @@ def dup(x):
     for i in d:
         if d[i] > 1:
             return True
-        else:
-            return False
+    return False
 
 def dup2(x):
     return len(set(x)) != len(x)
