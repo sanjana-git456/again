@@ -7,8 +7,8 @@ def dup(x):
         else:
             d[i] = 1
     for i in d:
-        if d[i] == 1:
-            return False
-        else:
+        if d[i] > 1:
             return True
+        else:
+            return False
 print(dup(x))
