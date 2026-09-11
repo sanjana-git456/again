@@ -5,11 +5,11 @@ def bin(x):
     right = len(x)-1
     for i in range(len(x)):
         mid = (left+right)//2
-        if mid == t:
-            return i
-        elif mid < t:
+        if x[mid] == t:
+            return mid
+        elif x[mid] < t:
             left = mid+1
-        elif mid > t:
+        elif x[mid] > t:
             right = mid-1
     return -1
 print(bin(x))
