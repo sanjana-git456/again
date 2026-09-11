@@ -6,7 +6,7 @@ def par(x):
         if i not in d:
             s.append(i)
         else:
-            if d[i] != s[-1]:
+            if not s or d[i] != s[-1]:
                 return False
             s.pop()
     if s == []:
