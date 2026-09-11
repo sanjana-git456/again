@@ -12,3 +12,6 @@ def dup(x):
         else:
             return False
 print(dup(x))
+
+def dup2(x):
+    return len(set(x)) != len(x)
