@@ -29,3 +29,4 @@ def merge(head1,head2):
     else:
         tail.next = head2
     return dummy.next
+print(merge(head1,head2))
