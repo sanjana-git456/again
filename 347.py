@@ -8,5 +8,8 @@ def freq(x,k):
         else:
             d[i] = 1
     s = sorted(d.items(), key = lambda x:x[1],reverse = True)
-    return s
+    result = []
+    for i in range(k):
+        result.append(s[i][0])
+    return result
 print(freq(x,k))
