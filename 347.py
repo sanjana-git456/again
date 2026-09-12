@@ -7,10 +7,6 @@ def freq(x,k):
             d[i] += 1
         else:
             d[i] = 1
-    l = []
-    l.append(sorted(d.values))
-    a = []
-    for i in range(k):
-        a.append(l[i])
-    return a
+    s = sorted(d.items(), key = lambda x:x[1],reverse = True)
+    return s
 print(freq(x,k))
