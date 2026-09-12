@@ -31,5 +31,5 @@ def merge(head1,head2):
     return dummy.next
 result = merge(head1,head2)
 while result:
-    print(result.val, "->")
+    print(result.val, end = " ")
     result = result.next
