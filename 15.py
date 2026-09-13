@@ -8,7 +8,7 @@ def ts(x):
         find = -fix
         while left < right:
             if x[left]+x[right] == find:
-                return left, right, i
+                return i, left, right
             elif x[left]+x[right] > find:
                 right -= 1
             else:
