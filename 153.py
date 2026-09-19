@@ -5,10 +5,9 @@ def romin(x):
     m = 0
     while left < right:
         mid = (left+right) // 2
-        if right == left:
-            return mid
-        elif x[mid] > x[right]:
+        if x[mid] > x[right]:
             left = mid+1
         else:
             right = mid
+    return x[left]
 print(romin(x))
