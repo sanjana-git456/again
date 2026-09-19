@@ -18,4 +18,4 @@ def find(x,t):
             else:
                 right = mid-1
     return -1
-print(find(x))
+print(find(x,t))
