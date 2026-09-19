@@ -13,10 +13,12 @@ def island(x,r,c):
     island(x,r,c+1) #right
     island(x,r+1,c) #down
     island(x,r,c-1) #left
-def num(x,r,c):
+def num(x):
     count = 0
     for r in range(len(x)):
         for c in range(len(x[0])):
-            count += 1
-            island(x,r,c)
+            if x[r][c] == '1':
+                count += 1
+                island(x,r,c)
     return count
+print(num(grid))
