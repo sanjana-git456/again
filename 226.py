@@ -13,6 +13,10 @@ root.right.left = TreeNode(6)
 root.right.right = TreeNode(9)
 
 def invert(root):
+    if root is None:
+        return 0
+    invert(root.left)
+    invert(root.right)
     root.left, root.right = root.right, root.left
     return root
 print(invert(root))
