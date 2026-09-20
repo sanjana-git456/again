@@ -19,4 +19,15 @@ def invert(root):
     invert(root.right)
     root.left, root.right = root.right, root.left
     return root
-print(invert(root))
+
+def inorder(root):
+    if root is None:
+        return
+    inorder(root.left)
+    print(root.val, end = " ")
+    inorder(root.right)
+
+inorder(root)
+print()
+invert(root)
+inorder(root)
